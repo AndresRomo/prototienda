@@ -1,0 +1,431 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#adminbar{
+  padding-right: 28px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgba(38,36,35,1);
+  color: wheat;
+  position: fixed;
+  z-index: 2;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+
+}
+
+#adminbar h5{
+  margin: 13px;
+}
+#adminbar a{
+  color: wheat;
+  text-decoration: none;
+  font-size: 17px;
+}
+#adminbar a:hover{
+  font-size: 20px;
+}
+
+/*----------------------------------------------------------------*/
+#hero{
+  text-align: center;
+}
+#hero img{
+  width: 80%;
+  height: 190px
+}
+/*----------------------------------------------------------------*/
+#navbar{
+  position: relative;
+  border-bottom: 1px solid #ddd7d7;
+  border-top: 1px solid #ddd7d7;
+}
+
+#navbar img{
+  width: 100px;
+}
+
+#navbar figure{
+  margin: 0px 35px;
+}
+
+#navbar #buttons-container{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar #buttons-container ul{
+  display: flex;
+  list-style: none;
+}
+
+#navbar #buttons-container li{
+  padding: 0px 60px;
+  width: 65px;
+}
+
+#navbar #buttons-container a{
+  text-decoration: none;
+  color: black;
+}
+
+#navbar #buttons-container h1{
+  font-size: 33px;
+}
+
+
+#navbar #buttons-container li:hover{
+  border-bottom: 3px solid;
+}
+
+/*----------------------------------------------------------------*/
+#main{
+  display: flex;
+  justify-content: center;
+}
+
+#tienda{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#tienda .item{
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    width: 290px;
+    margin: 10px 10px;
+}
+
+#tienda .item figure{
+  margin: 0px;
+}
+#tienda .item img{
+  width: 290px;
+  height: 340px;
+}
+
+#tienda .item h4{
+  text-align: center;
+}
+
+#tienda .item p{
+  text-align: center;
+}
+#tienda .item div{
+  text-align: center;
+}
+
+#tienda .item .buy-button:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*----------------------------------------------------------------*/
+#carrito-container{
+  font-family: arial;
+  padding: 50px;
+  width: 650px;
+  margin-bottom: 50px;
+}
+
+#carrito-container #carrito-comprar{
+  padding: 10px;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height:   60px;
+}
+
+#carrito-container #carrito-comprar img{
+  width: 130px;
+  grid-column: 1 / span 3;
+}
+#carrito-container #carrito-comprar div{
+  grid-column: 9;
+  grid-row: 1 / span 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#carrito-container #carrito-contacto{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#carrito-container #empty-carrito-div{
+  border: 2px solid black;
+  padding: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#carrito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#carrito .item{
+  width: 650px;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+#carrito .item h4{
+  text-align: center;
+}
+
+#carrito .item img{
+  width: 160px;
+  height: 200px;
+}
+
+#carrito .item .fas:hover{
+  font-size: 20px;
+}
+
+#carrito .item .buttons i{
+    margin: 8px;
+}
+
+/*----------------------------------------------------------------*/
+#addForm{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 5px 15px;
+  border: 1px solid gray;
+}
+#addForm .form{
+  margin: 7px;
+}
+/*----------------------------------------------------------------*/
+
+#edit-container #results{
+  width: 900px;
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+#edit-container #results .item{
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 4fr 1fr 1fr;
+}
+
+#edit-container #results .item div{
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 10px;
+}
+#edit-container #results .item img{
+  width: 120px;
+  height: 130px;
+}
+
+#edit-container #results .item a{
+  color: black;
+}
+#edit-container #results .item a:hover{
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+#edit-item{
+  width: 900px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 4fr 1fr 1fr;
+  margin: 30px;
+}
+#edit-item img{
+  width: 120px;
+  height: 130px;
+}
+
+#edit-item div{
+  border: 1px solid gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+#edit-item .far{
+  font-size: 25px;
+}
+#edit-item .far:hover{
+  font-size: 30px;
+}
+
+#edit-item .edit-camp{
+  cursor: pointer;
+}
+#edit-item .edit-camp:hover{
+  border: 2px solid black;
+}
+/*----------------------------------------------------------------*/
+
+#pedidos .pedido{
+  margin: 10px;
+}
+
+#pedidos .pedido .datos{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#pedidos .pedido .ids{
+  display: flex;
+}
+#pedidos .pedido .ids a:hover{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#pedidos .pedido div{
+    border: 1px solid #262423;
+    text-align: center;
+}
+#pedidos .pedido div div{
+  padding: 10px;
+}
+/*----------------------------------------------------------------*/
+#footer{
+  background-color: #262423;
+  color: wheat;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*----------------------------------------------------------------*/
+
+.myButton-black{
+  background-color: #262423;
+  color:wheat;
+}
+.myButton-wheat{
+  background-color: wheat;
+  color: #262423;
+}
+.swal-modal {
+  border: 2px solid #262423;
+}
+
+.swal-text{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*----------------------------------------------------------------*/
+@media screen and (max-width: 1200px){
+  #tienda{
+    grid-template-columns: 1fr  1fr;
+  }
+  #tienda .item{
+    margin: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 720px){
+
+  #adminbar{
+    padding-right: 10px;
+
+  }
+
+  #adminbar a{
+    font-size: 16px;
+  }
+
+  #hero img{
+    height: 100px;
+  }
+  #navbar img{
+    width: 40px
+  }
+  #navbar figure{
+    margin: 0px 12px;
+  }
+  #navbar #buttons-container h1{
+    font-size: 21px;
+  }
+  #navbar #buttons-container h3{
+    font-size: 14px;
+  }
+  #navbar #buttons-container li{
+    padding: 0px 15px;
+  }
+  #tienda{
+    width: 230px;
+    grid-template-columns: 1fr;
+  }
+  #tienda .item{
+    width: 230px;
+    margin: 10px 0px;
+  }
+  #tienda .item img{
+    width: 230px;
+    height: 280px;
+  }
+  #carrito-container{
+    width: 310px;
+    padding: 0px;
+  }
+  #carrito .item{
+    width: 310px;
+    font-size: 10px;
+  }
+  #carrito .item img{
+    width: 68px;
+    height: 86px;
+  }
+  #carrito .item h4{
+    max-width: 20px;
+  }
+  #edit-container #results{
+    width: 300px;
+    font-size: 10px;
+  }
+
+  #edit-container #results .item img{
+    width: 50px;
+    height: 70px;
+  }
+  #edit-item{
+    width: 300px;
+    font-size: 10px;
+  }
+  #edit-item img{
+    width: 50px;
+    height: 70px;
+  }
+  #footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #footer h5{
+    font-size: 9px;
+  }
+
+}
